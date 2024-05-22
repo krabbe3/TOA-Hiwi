@@ -1,5 +1,7 @@
 import folium
 import webbrowser
+import numpy as np
+import geopy
 
 # Define coordinates of where we want to center our map (center to mean of the loc result)
 map_bounds = [self._pos_base['latitude'], self._pos_base['longitude']]
@@ -73,4 +75,4 @@ if self._node_lat is not None:
 #Display the map
 save_map = LOC_PATH + str(node_id) + '_calib.html'
 my_map.save(save_map)
-#webbrowser.open(save_map)
+webbrowser.open(save_map)
